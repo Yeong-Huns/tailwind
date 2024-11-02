@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>flex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<header class="bg-gray-100 p-6 rounded-lg mb-6">
+    <nav class="flex justify-between items-center">
+        <!-- 좌측: 로고 -->
+        <div class="text-2xl font-bold">MyWebsite</div>
+
+        <!-- 중앙: 네비게이션 링크 -->
+        <ul class="flex gap-4">
+            <li>
+                <a href="#" class="text-gray-700 hover:text-gray-900">Home</a>
+            </li>
+            <li>
+                <a href="#" class="text-gray-700 hover:text-gray-900">About</a>
+            </li>
+            <li>
+                <a href="#" class="text-gray-700 hover:text-gray-900">Services</a>
+            </li>
+            <li>
+                <a href="#" class="text-gray-700 hover:text-gray-900">Contact</a>
+            </li>
+        </ul>
+
+        <!-- 우측: 로그인 버튼 -->
+        <div>
+            <button
+                    class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700"
+                    type="button"
+            >
+                Login
+            </button>
+        </div>
+    </nav>
+</header>
+
+<header class="bg-gray-100 p-6 flex justify-between items-center mb-4">
+    <div class="font-bold text-2xl">MyWebsite</div>
+    <ul class="flex gap-x-4">
+        <li>Home</li>
+        <li>About</li>
+        <li>Service</li>
+        <li>Contact</li>
+    </ul>
+    <button class="bg-blue-500 rounded text-white px-4 py-2 hover:bg-blue-700">Login</button>
+</header>
+
+<header class="flex items-center justify-between p-6 bg-yellow-700 rounded">
+    <div class="font-bold text-2xl text-white">Latteve</div>
+    <ul class="flex gap-x-4">
+        <li class="text-white hover:text-gray-300"><a href="#">홈</a></li>
+        <li class="text-white hover:text-gray-300"><a href="#">프로젝트</a></li>
+        <li class="text-white hover:text-gray-300"><a href="#">라떼버</a></li>
+        <li class="text-white hover:text-gray-300"><a href="#">마이페이지</a></li>
+    </ul>
+<div>
+    <img src="https://via.placeholder.com/30x30.png?text=Alarm"
+         alt="알람 이미지"
+         class="w-full h-full rounded-lg shadow-md"
+    />
+</div>
+    <button class="rounded bg-yellow-900 text-white px-4 py-2 font-bold hover:bg-yellow-950">로그인</button>
+</header>
+</body>
+</html>
