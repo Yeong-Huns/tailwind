@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="flex justify-between items-center bg-green-600 p-4 text-white">
+        <div class="text-2xl font-bold flex gap-4">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAASFBMVEVHcEwD0mcE62cE6GcE7mcE7GcF7GcE4mdd4pE82H4C2mX////g9+rR9OCd57sC0mYCymVd0Y8Cw2UixnACvWYCuWYCt2YCuGa1Zq98AAAAGHRSTlMAS7X//73A//////////////////+1/78LKXJJAAAA0UlEQVR4AXWJhRHAQBACibtb/52GP+KyLzAsiOcH4YPA92BETyNikDj4IgyCCPDU9O9FePCDncTuBR/JlUCxI/nkKdM0zSzJIfPETlqQjKVkptuIXJgsWSqT4iJJ/ZBNbkeyyBpJrWj4k02Wkg3hDIakqCUFFK2TVV2Ibpdt407TOdmWkqnGFq2QzCQ7bQ/Z1/+yb/vyJnvhZMkcTPZil0PXddnIkrEMD9mPREF2ySr6oxwV0/jLBG9Wm3n0H9UDltkYFZe+ALIP5AxveqvJo1gBuZAlPbYzv2wAAAAASUVORK5CYII="
+            alt="네이버로고" class="w-auto h-auto rounded-full"/>
+            N이버</div>
+        <div>
+            <ul class="flex justify-between gap-x-2 font-bold">
+                <li><a href="#" class="hover:underline decoration-red-200">뉴스</a></li>
+                <li><a href="#" class="hover:underline decoration-red-200">웹툰</a></li>
+                <li><a href="#" class="hover:underline decoration-red-200">블로그</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="flex">
+        <section class="w-3/5 bg-yellow-300">여긴 좌측 section 이에요</section>
+        <aside class="w-2/5 bg-red-400">여긴 우측 section 이에요</aside>
+    </main>
+</body>
+</html>
