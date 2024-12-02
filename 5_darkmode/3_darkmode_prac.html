@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js" ></script>
+    <script>
+		tailwind.config = {
+			darkMode: 'class',
+		};
+    </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-black dark:text-white transition-all duration-200">
+<main class="min-h-screen flex flex-col justify-center items-center space-y-8">
+    <div class="text-4xl font-bold">Tailwind CSS 다크 모드 실습</div>
+    <div class="text-lg">이 페이지는 다크 모드를 지원합니다.</div>
+    <button onclick="toggleDarkMode()" class="px-4 py-2 bg-blue-500 text-white border rounded-md hover:bg-blue-600 transition duration-500">
+        다크 모드 활성화
+    </button>
+    <div class="shadow-lg p-6 rounded-md bg-gray-100 dark:bg-gray-800">
+        이 박스는 다크 모드에서 배경이 어두운 색으로 변합니다.
+    </div>
+</main>
+</body>
+</html>
